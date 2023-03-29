@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Our VR City</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Loading Assets  -->
+      <a-a-assets>
+        <a-asset-item id="supermarket" src="assets/lowpoly_supermarket/scene.gltf"></a-asset-item>
+        <a-asset-item id="barber" src="assets/barber_shop_-_stylised/scene.gltf"></a-asset-item>
+        <a-asset-item id="cafe" src="assets/low_poly_cafe/scene.gltf"></a-asset-item>
+        <a-asset-item id="cafe-sign" src="assets/cafe_sign/scene.gltf"></a-asset-item>
+        <a-asset-item id="people" src="assets/low_poly_people_free_sample_pack/scene.gltf"></a-asset-item>
+        <a-asset-item id="B1" src="assets/game_ready_city_buildings/scene.gltf"></a-asset-item>
+        <a-asset-item id="B2" src="assets/realistic_chicago_buildings/scene.gltf"></a-asset-item>
+        <a-asset-item id="birds" src="assets/birds/scene.gltf"></a-asset-item>
+
+
+      </a-a-assets>
+      <a-sky color="white" src="BG1.jpg">
+        <a-cylinder position="0 0 0" height="0.5" radius="20" color="black" ></a-cylinder>
+
+        <a-entity scale="0.5 0.5 0.5" gltf-model="#supermarket" position="0 0.2 -1 " rotation="0 20 0" > </a-entity>
+
+        <a-entity scale="0.9 0.55 0.5" gltf-model="#barber" position="-6 0 -6 " rotation="0 20 0" > </a-entity>
+
+        <a-entity scale="0.05 0.05 0.05" gltf-model="#cafe" position="-7 0.3 3 " rotation="0 20 0" > </a-entity>
+        <a-entity scale="0.0015 0.0015 0.0015" gltf-model="#cafe-sign" position="6 0.3 2 " rotation="0 300 20" > </a-entity>
+
+        <a-entity scale="0.6 0.6 0.6" gltf-model="#people" position="-5 0.3 6  " rotation="0 0 0" > </a-entity>
+
+        <a-entity scale="3 3 3" gltf-model="#B1" position="-12 0.3 -3" rotation="0 90 0"  > </a-entity>
+        <a-entity scale="0.15 0.15 0.15" gltf-model="#B2" position="-12 -1 -10" rotation="0 0 0"  > </a-entity>
+
+        <a-entity scale="2 2 2" gltf-model="#birds" position="-10 13 -1 " rotation="-20 90 0" > </a-entity>
+        <a-entity scale="2 2 2" gltf-model="#birds" position="-5 13 -3 " rotation="-20 90 0" > </a-entity>
+
+
+
+
+      </a-sky>
+
+
+      <!-- CAMERA -->
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 3 15"> </a-camera>
+
+
+    </a-scene>
+  </body>
+</html>
